@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>支持跨域的对象</title>
+</head>
+<body>
+  <!-- 统计链接, 支持跨域但是无法实现获取服务端返回的数据 -->
+  <img src="http://www.itcast.cn?id=10&sdds=dsfs" alt="">
+  <!-- 支持，可以接收服务端数据，但是过程复杂 -->
+  <iframe src="http://www.itheima.com" frameborder="0"></iframe>
+  <!-- 会在CSS处理阶段报错 -->
+  <link rel="stylesheet" href="http://bbs.itcast.cn">
+  <!--  -->
+  <script src="http://bbs.itheima.com"></script>
+  <!--
+callback({id:1,name:张三,age:18})
+   -->
+  <script>
+  // function callback (data) {
+  //     console.log(data);
+  //   }
+    (function () {
+
+    })();
+
+    // window.angular = {};
+    // angular.callbacks = {};
+    // angular.callbacks._0=function () {
+    //   // body...
+    // }
+    // function jquery_jsonp121962347189 (arguments) {
+    //   // body...
+    // }
+  </script>
+<script>
+  var a =1
+</script>
+</body>
+</html>
